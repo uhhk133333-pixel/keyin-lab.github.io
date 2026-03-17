@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 스마트폰 웹페이지</title>
+    <style>
+      /* 기본 스타일 초기화 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+      }
+
+      /* 헤더 스타일 */
+      header {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+
+      /* 섹션 공통 스타일 */
+      section {
+        padding: 2rem 1.5rem;
+        margin-bottom: 10px;
+        background: white;
+      }
+      h2 {
+        border-left: 5px solid #3498db;
+        padding-left: 10px;
+        margin-bottom: 1rem;
+        color: #2c3e50;
+      }
+
+      /* 갤러리 그리드 (모바일 우선) */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+      }
+      .gallery-item {
+        background: #ddd;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      /* 푸터 스타일 */
+      footer {
+        background: #333;
+        color: #ccc;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.8rem;
+      }
+      .contact-info {
+        margin-bottom: 10px;
+      }
+      a {
+        color: #3498db;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Mobile Portfolio</h1>
+    </header>
+
+    <section id="security">
+      <h2>🔒 컴퓨터 보안</h2>
+      <p>
+        현대 IT 환경에서 정보 보호는 필수입니다. 악성코드 분석, 네트워크 보안 및
+        개인정보 보호를 위한 최신 기술을 다룹니다.
+      </p>
+      <ul>
+        <li>바이러스 및 랜섬웨어 예방</li>
+        <li>2단계 인증(2FA) 활성화</li>
+        <li>안전한 비밀번호 관리</li>
+      </ul>
+    </section>
+
+    <section id="class-info">
+      <h2>📚 내 수업 정보</h2>
+      <table style="width: 100%; border-collapse: collapse">
+        <tr style="background: #eee">
+          <th style="padding: 10px; border: 1px solid #ccc">교과목</th>
+          <th style="padding: 10px; border: 1px solid #ccc">시간</th>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc">웹 프로그래밍</td>
+          <td style="padding: 10px; border: 1px solid #ccc">월 09:00</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc">데이터베이스</td>
+          <td style="padding: 10px; border: 1px solid #ccc">수 13:00</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="gallery">
+      <h2>🖼️ 갤러리</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">이미지 1</div>
+        <div class="gallery-item">이미지 2</div>
+        <div class="gallery-item">이미지 3</div>
+        <div class="gallery-item">이미지 4</div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact-info">
+        <p>
+          📧 Email: <a href="mailto:example@email.com">example@email.com</a>
+        </p>
+        <p>📞 Tel: 010-1234-5678</p>
+      </div>
+      <hr style="margin: 10px 0; border: 0; border-top: 1px solid #444" />
+      <p>&copy; 2026 YourName. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
